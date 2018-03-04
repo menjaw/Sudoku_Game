@@ -13,27 +13,24 @@ public class Print_2D_Array {
 
     public static void main(String[] args) {
         testPrint();
-    }
+            }
 
-    
-    public static void testPrint(){
+    public static void testPrint() {
 
-        int a[][] = new int[9][9];
+        int board[][] = new int[9][9];
         int rowCount = 1;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                System.out.print(a[i][j] + " ");
+        for (int row = 0; row < board.length; row++) {
+            for (int column = 0; column < board[row].length; column++) {
+                System.out.print(board[row][column] + " ");
                 if (rowCount == 9) {
                     System.out.println("");
                     rowCount = 0;
                 }
-                rowCount ++;
+                rowCount++;
             }
         }
     }
-    
-    
-    
+
     public static void toD() {
         //Variables
         int[][] board = new int[9][9];

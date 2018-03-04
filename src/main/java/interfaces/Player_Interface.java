@@ -9,8 +9,13 @@ package interfaces;
  *
  * @author Menja
  */
-public interface I_Board {
-    public void generateSolution();
-    public void generatePlayerBoard();
-    
+public interface Player_Interface {
+
+    public void startNewGame();
+
+    public void nextMove();
+
+    public void getHelp();
+
+    public void endGame();
 }

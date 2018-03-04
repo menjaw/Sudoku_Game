@@ -9,7 +9,11 @@ package interfaces;
  *
  * @author Menja
  */
-public interface I_Proxy {
-
-    public void connectToGame();
+public interface Board_Interface {
+    public void generateSolution();
+    public void generatePlayerBoard();
+    public void checkRow();
+    public void checkColumn();
+    public void checkBlock();
+    
 }
